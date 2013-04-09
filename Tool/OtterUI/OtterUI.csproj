@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0589492C-497E-4BCA-805D-708850104FDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Otter</RootNamespace>
+    <AssemblyName>OtterUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio, Version=1.3.15.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NAudio\NAudio\dist\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandManager.cs" />
+    <Compile Include="Commands\NullCommand.cs" />
+    <Compile Include="Containers\NotifyingList.cs" />
+    <Compile Include="Containers\TextureAtlas.cs" />
+    <Compile Include="Imaging\GaussianBlur.cs" />
+    <Compile Include="Imaging\PCXLoader.cs" />
+    <Compile Include="Plugins\ControlAttribute.cs" />
+    <Compile Include="CustomControls\AnchorEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\AnchorEditor.Designer.cs">
+      <DependentUpon>AnchorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TextureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TextureList.Designer.cs">
+      <DependentUpon>TextureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export\FourCCStack.cs" />
+    <Compile Include="Export\IExportable.cs" />
+    <Compile Include="Export\ImporterExporter.cs" />
+    <Compile Include="Export\Platform.cs" />
+    <Compile Include="Export\PlatformBinaryWriter.cs" />
+    <Compile Include="Forms\ActionsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActionsEditor.designer.cs">
+      <DependentUpon>ActionsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddCharactersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCharactersForm.Designer.cs">
+      <DependentUpon>AddCharactersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SoundManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SoundManagerForm.Designer.cs">
+      <DependentUpon>SoundManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GlyphEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GlyphEditor.Designer.cs">
+      <DependentUpon>GlyphEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessagesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessagesEditor.Designer.cs">
+      <DependentUpon>MessagesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TextureManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TextureManagerForm.Designer.cs">
+      <DependentUpon>TextureManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Plugins\PluginAttribute.cs" />
+    <Compile Include="Project\GUIProject.cs" />
+    <Compile Include="Project\GUIProjectEntry.cs" />
+    <Compile Include="Project\GUIProjectScene.cs" />
+    <Compile Include="Project\Resolution.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TypeConverters\AnchorConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeConverters\MaskConverter.cs" />
+    <Compile Include="TypeConverters\PercentageConverter.cs" />
+    <Compile Include="TypeConverters\ListConverter.cs" />
+    <Compile Include="TypeConverters\SoundConverter.cs" />
+    <Compile Include="TypeConverters\MessageConverter.cs" />
+    <Compile Include="TypeConverters\FontConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeConverters\PointFConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeConverters\TextureConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeEditors\UIImageFileEditor.cs" />
+    <Compile Include="TypeEditors\UIActionListEditor.cs" />
+    <Compile Include="TypeEditors\UIMaskEditor.cs" />
+    <Compile Include="TypeEditors\UISoundEditor.cs" />
+    <Compile Include="TypeEditors\UIMessageEditor.cs" />
+    <Compile Include="TypeEditors\UIAnchorEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeEditors\UIFontEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeEditors\UIFontFileEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeEditors\UIGlyphEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeEditors\UITextureEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Animation\MainChannelFrame.cs" />
+    <Compile Include="UI\AnchorSettings.cs" />
+    <Compile Include="UI\Animation\GUIAnimation.cs" />
+    <Compile Include="UI\Animation\GUIAnimationChannel.cs" />
+    <Compile Include="UI\Animation\GUIAnimationCollection.cs" />
+    <Compile Include="UI\Animation\KeyFrame.cs" />
+    <Compile Include="UI\Actions\MessageAction.cs" />
+    <Compile Include="UI\Actions\Action.cs" />
+    <Compile Include="UI\Actions\SoundAction.cs" />
+    <Compile Include="UI\Animation\BaseFrame.cs" />
+    <Compile Include="UI\Attributes\MethodAttribute.cs" />
+    <Compile Include="UI\GUIMask.cs" />
+    <Compile Include="UI\GUISlider.cs" />
+    <Compile Include="UI\GUITable.cs" />
+    <Compile Include="UI\GUIButton.cs" />
+    <Compile Include="UI\GUIControl.cs" />
+    <Compile Include="UI\GUIControlCollection.cs" />
+    <Compile Include="UI\GUIFont.cs" />
+    <Compile Include="UI\GUIGroup.cs" />
+    <Compile Include="UI\GUILabel.cs" />
+    <Compile Include="UI\GUIScene.cs" />
+    <Compile Include="UI\GUISprite.cs" />
+    <Compile Include="UI\GUIToggle.cs" />
+    <Compile Include="UI\GUIView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Message.cs" />
+    <Compile Include="UI\Resources\Resource.cs" />
+    <Compile Include="UI\Resources\SoundInfo.cs" />
+    <Compile Include="UI\Resources\TextureInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControls\AnchorEditor.resx">
+      <DependentUpon>AnchorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TextureList.resx">
+      <DependentUpon>TextureList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActionsEditor.resx">
+      <DependentUpon>ActionsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddCharactersForm.resx">
+      <DependentUpon>AddCharactersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SoundManagerForm.resx">
+      <DependentUpon>SoundManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GlyphEditor.resx">
+      <DependentUpon>GlyphEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessagesEditor.resx">
+      <DependentUpon>MessagesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextureManagerForm.resx">
+      <DependentUpon>TextureManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FontBuilder\FontBuilder.vcproj">
+      <Project>{88AD79D4-6E7A-4ABB-8EEF-7E037EB06B6D}</Project>
+      <Name>FontBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtterInterface\OtterInterface.vcproj">
+      <Project>{FB3AFB37-B952-4256-A98F-D7CADCB6D549}</Project>
+      <Name>OtterInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

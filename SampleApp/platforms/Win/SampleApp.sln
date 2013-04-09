@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleApp", "SampleApp.vcproj", "{B06BD261-419E-498A-ABD1-776FE8459210}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		D3D Debug|Win32 = D3D Debug|Win32
+		D3D Debug|x64 = D3D Debug|x64
+		D3D Release|Win32 = D3D Release|Win32
+		D3D Release|x64 = D3D Release|x64
+		PS3 SNC Debug|Win32 = PS3 SNC Debug|Win32
+		PS3 SNC Debug|x64 = PS3 SNC Debug|x64
+		PS3 SNC Release|Win32 = PS3 SNC Release|Win32
+		PS3 SNC Release|x64 = PS3 SNC Release|x64
+		Win32 Debug MDd|Win32 = Win32 Debug MDd|Win32
+		Win32 Debug MDd|x64 = Win32 Debug MDd|x64
+		Win32 Debug MTd|Win32 = Win32 Debug MTd|Win32
+		Win32 Debug MTd|x64 = Win32 Debug MTd|x64
+		Win32 Release MD|Win32 = Win32 Release MD|Win32
+		Win32 Release MD|x64 = Win32 Release MD|x64
+		Win32 Release MT|Win32 = Win32 Release MT|Win32
+		Win32 Release MT|x64 = Win32 Release MT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Debug|Win32.ActiveCfg = D3D Debug|Win32
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Debug|Win32.Build.0 = D3D Debug|Win32
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Debug|x64.ActiveCfg = D3D Debug|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Debug|x64.Build.0 = D3D Debug|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Release|Win32.ActiveCfg = D3D Release|Win32
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Release|Win32.Build.0 = D3D Release|Win32
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Release|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.D3D Release|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Debug|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Debug|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Debug|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Release|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Release|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.PS3 SNC Release|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MDd|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MDd|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MDd|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MTd|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MTd|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Debug MTd|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MD|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MD|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MD|x64.Build.0 = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MT|Win32.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MT|x64.ActiveCfg = D3D Release|x64
+		{B06BD261-419E-498A-ABD1-776FE8459210}.Win32 Release MT|x64.Build.0 = D3D Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

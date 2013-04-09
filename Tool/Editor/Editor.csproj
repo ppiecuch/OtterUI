@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3F507FD-A458-47EC-A6DA-EAD36E43B047}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Otter.Editor</RootNamespace>
+    <AssemblyName>Otter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>Otter.Editor.Program</StartupObject>
+    <ApplicationIcon>Otter.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\grafalgar\Desktop\test_publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6BF38DE93DC13FFCEF1B05EEF7DE1C421C35771F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Editor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.4.0.25515, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WeifenLuo\lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundMode.cs" />
+    <Compile Include="Commands\AnimationCommands\ClearFramesCommand.cs" />
+    <Compile Include="Commands\AnimationCommands\InsertFramesCommand.cs" />
+    <Compile Include="Commands\AnimationCommands\MoveFramesCommand.cs" />
+    <Compile Include="Commands\AnimationCommands\TrimFramesCommand.cs" />
+    <Compile Include="Commands\ControlCommands\AddControlCommand.cs" />
+    <Compile Include="Commands\ControlCommands\ChangeParentCommand.cs" />
+    <Compile Include="Commands\ControlCommands\ControlCommand.cs" />
+    <Compile Include="Commands\ControlCommands\ChangeOrderCommand.cs" />
+    <Compile Include="Commands\ControlCommands\DeleteControlCommand.cs" />
+    <Compile Include="Commands\ControlCommands\MoveControlCommand.cs" />
+    <Compile Include="Commands\ControlCommands\ResizeControlCommand.cs" />
+    <Compile Include="Commands\PropertyChangedCommand.cs" />
+    <Compile Include="Commands\SceneSnapshotCommand.cs" />
+    <Compile Include="Commands\ViewCommands\AddViewCommand.cs" />
+    <Compile Include="Commands\ViewCommands\DeleteViewCommand.cs" />
+    <Compile Include="Commands\ViewCommands\ViewCommand.cs" />
+    <Compile Include="ContentViews\ControlsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\ControlsView.Designer.cs">
+      <DependentUpon>ControlsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\HistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\HistoryView.Designer.cs">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\ProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\ProjectView.Designer.cs">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\PropertiesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\PropertiesView.Designer.cs">
+      <DependentUpon>PropertiesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\SceneHierarchyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\SceneHierarchyView.Designer.cs">
+      <DependentUpon>SceneHierarchyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\SceneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\SceneView.Designer.cs">
+      <DependentUpon>SceneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViews\TimelineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViews\TimelineView.Designer.cs">
+      <DependentUpon>TimelineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\InsertFramesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomControls\InsertFramesForm.Designer.cs">
+      <DependentUpon>InsertFramesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\RenderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TimelineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TimelineControl.Designer.cs">
+      <DependentUpon>TimelineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporting\AssetExporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporting\AssetExporter.Designer.cs">
+      <DependentUpon>AssetExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporting\ProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporting\ProgressWindow.Designer.cs">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListEditor.designer.cs">
+      <DependentUpon>ListEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreferencesForm.Designer.cs">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportBugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportBugForm.designer.cs">
+      <DependentUpon>ReportBugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="OtterEditorMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtterEditorMainForm.Designer.cs">
+      <DependentUpon>OtterEditorMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="ContentViews\ControlsView.resx">
+      <DependentUpon>ControlsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\HistoryView.resx">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\ProjectView.resx">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\PropertiesView.resx">
+      <DependentUpon>PropertiesView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\SceneHierarchyView.resx">
+      <DependentUpon>SceneHierarchyView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\SceneView.resx">
+      <DependentUpon>SceneView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViews\TimelineView.resx">
+      <DependentUpon>TimelineView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\InsertFramesForm.resx">
+      <DependentUpon>InsertFramesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\RenderPanel.resx">
+      <DependentUpon>RenderPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TimelineControl.resx">
+      <DependentUpon>TimelineControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporting\AssetExporter.resx">
+      <DependentUpon>AssetExporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporting\ProgressWindow.resx">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListEditor.resx">
+      <DependentUpon>ListEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreferencesForm.resx">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportBugForm.resx">
+      <DependentUpon>ReportBugForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtterEditorMainForm.resx">
+      <DependentUpon>OtterEditorMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="res\LiberationSans.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aga.Controls\Aga.Controls.csproj">
+      <Project>{E73BB233-D88B-44A7-A98F-D71EE158381D}</Project>
+      <Name>Aga.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FontBuilder\FontBuilder.vcproj">
+      <Project>{88AD79D4-6E7A-4ABB-8EEF-7E037EB06B6D}</Project>
+      <Name>FontBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtterInterface\OtterInterface.vcproj">
+      <Project>{FB3AFB37-B952-4256-A98F-D7CADCB6D549}</Project>
+      <Name>OtterInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtterUI\OtterUI.csproj">
+      <Project>{0589492C-497E-4BCA-805D-708850104FDC}</Project>
+      <Name>OtterUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\view_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\NoBounds.png" />
+    <None Include="img\RedBounds.png" />
+    <None Include="img\TransBounds.png" />
+    <None Include="img\Grid.png" />
+    <Content Include="Otter.ico" />
+    <EmbeddedResource Include="res\ControlTextures\Toggle_Off.png" />
+    <EmbeddedResource Include="res\ControlTextures\Toggle_On.png" />
+    <EmbeddedResource Include="res\ControlTextures\Slider_Thumb.png" />
+    <EmbeddedResource Include="res\ControlTextures\Slider_Start.png" />
+    <EmbeddedResource Include="res\ControlTextures\Slider_Middle.png" />
+    <EmbeddedResource Include="res\ControlTextures\Slider_End.png" />
+    <EmbeddedResource Include="res\default_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5128D6E131225660001FC35 /* OtterC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5128D6C131225660001FC35 /* OtterC.cpp */; };
+		B5128D6F131225660001FC35 /* OtterC.h in Headers */ = {isa = PBXBuildFile; fileRef = B5128D6D131225660001FC35 /* OtterC.h */; };
+		B54D03BD13ED0269006B66DC /* Button.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037113ED0269006B66DC /* Button.h */; };
+		B54D03BE13ED0269006B66DC /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037313ED0269006B66DC /* Array.h */; };
+		B54D03BF13ED0269006B66DC /* BaseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037413ED0269006B66DC /* BaseTypes.h */; };
+		B54D03C013ED0269006B66DC /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037513ED0269006B66DC /* Event.h */; };
+		B54D03C113ED0269006B66DC /* Platforms.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037613ED0269006B66DC /* Platforms.h */; };
+		B54D03C213ED0269006B66DC /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037713ED0269006B66DC /* Types.h */; };
+		B54D03C313ED0269006B66DC /* UTF8String.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037813ED0269006B66DC /* UTF8String.h */; };
+		B54D03C413ED0269006B66DC /* Control.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037913ED0269006B66DC /* Control.h */; };
+		B54D03C513ED0269006B66DC /* Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037B13ED0269006B66DC /* Graphics.h */; };
+		B54D03C613ED0269006B66DC /* IFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037D13ED0269006B66DC /* IFileSystem.h */; };
+		B54D03C713ED0269006B66DC /* IPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037E13ED0269006B66DC /* IPlugin.h */; };
+		B54D03C813ED0269006B66DC /* IRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D037F13ED0269006B66DC /* IRenderer.h */; };
+		B54D03C913ED0269006B66DC /* ISoundSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038013ED0269006B66DC /* ISoundSystem.h */; };
+		B54D03CA13ED0269006B66DC /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038113ED0269006B66DC /* Label.h */; };
+		B54D03CB13ED0269006B66DC /* Mask.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038213ED0269006B66DC /* Mask.h */; };
+		B54D03CC13ED0269006B66DC /* Matrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038413ED0269006B66DC /* Matrix4.h */; };
+		B54D03CD13ED0269006B66DC /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038513ED0269006B66DC /* Vector2.h */; };
+		B54D03CE13ED0269006B66DC /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038613ED0269006B66DC /* Vector3.h */; };
+		B54D03CF13ED0269006B66DC /* Vector4.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038713ED0269006B66DC /* Vector4.h */; };
+		B54D03D013ED0269006B66DC /* VectorMath.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038813ED0269006B66DC /* VectorMath.h */; };
+		B54D03D113ED0269006B66DC /* Otter.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038913ED0269006B66DC /* Otter.h */; };
+		B54D03D213ED0269006B66DC /* Scene.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038A13ED0269006B66DC /* Scene.h */; };
+		B54D03D313ED0269006B66DC /* Slider.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038B13ED0269006B66DC /* Slider.h */; };
+		B54D03D413ED0269006B66DC /* Sprite.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038C13ED0269006B66DC /* Sprite.h */; };
+		B54D03D513ED0269006B66DC /* System.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038D13ED0269006B66DC /* System.h */; };
+		B54D03D613ED0269006B66DC /* Table.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038E13ED0269006B66DC /* Table.h */; };
+		B54D03D713ED0269006B66DC /* Toggle.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D038F13ED0269006B66DC /* Toggle.h */; };
+		B54D03D813ED0269006B66DC /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D039013ED0269006B66DC /* View.h */; };
+		B54D03D913ED0269006B66DC /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039213ED0269006B66DC /* Button.cpp */; };
+		B54D03DA13ED0269006B66DC /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039413ED0269006B66DC /* Log.cpp */; };
+		B54D03DB13ED0269006B66DC /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D039513ED0269006B66DC /* Log.h */; };
+		B54D03DC13ED0269006B66DC /* UTF8String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039613ED0269006B66DC /* UTF8String.cpp */; };
+		B54D03DD13ED0269006B66DC /* Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039713ED0269006B66DC /* Control.cpp */; };
+		B54D03DE13ED0269006B66DC /* OtterData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039913ED0269006B66DC /* OtterData.cpp */; };
+		B54D03DF13ED0269006B66DC /* OtterData.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D039A13ED0269006B66DC /* OtterData.h */; };
+		B54D03E013ED0269006B66DC /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039B13ED0269006B66DC /* Font.cpp */; };
+		B54D03E113ED0269006B66DC /* Font.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D039C13ED0269006B66DC /* Font.h */; };
+		B54D03E213ED0269006B66DC /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039E13ED0269006B66DC /* Graphics.cpp */; };
+		B54D03E313ED0269006B66DC /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D039F13ED0269006B66DC /* Group.cpp */; };
+		B54D03E413ED0269006B66DC /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D03A013ED0269006B66DC /* Group.h */; };
+		B54D03E513ED0269006B66DC /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A113ED0269006B66DC /* Label.cpp */; };
+		B54D03E613ED0269006B66DC /* Mask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A213ED0269006B66DC /* Mask.cpp */; };
+		B54D03E713ED0269006B66DC /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A413ED0269006B66DC /* Matrix4.cpp */; };
+		B54D03E813ED0269006B66DC /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A513ED0269006B66DC /* Vector2.cpp */; };
+		B54D03E913ED0269006B66DC /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A613ED0269006B66DC /* Vector3.cpp */; };
+		B54D03EA13ED0269006B66DC /* Vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A713ED0269006B66DC /* Vector4.cpp */; };
+		B54D03EB13ED0269006B66DC /* VectorMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03A813ED0269006B66DC /* VectorMath.cpp */; };
+		B54D03EC13ED0269006B66DC /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03AA13ED0269006B66DC /* Memory.cpp */; };
+		B54D03ED13ED0269006B66DC /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D03AB13ED0269006B66DC /* Memory.h */; };
+		B54D03EE13ED0269006B66DC /* MemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03AC13ED0269006B66DC /* MemoryManager.cpp */; };
+		B54D03EF13ED0269006B66DC /* MemoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D03AD13ED0269006B66DC /* MemoryManager.h */; };
+		B54D03F013ED0269006B66DC /* Otter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03AE13ED0269006B66DC /* Otter.cpp */; };
+		B54D03F113ED0269006B66DC /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03AF13ED0269006B66DC /* Scene.cpp */; };
+		B54D03F213ED0269006B66DC /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B013ED0269006B66DC /* Slider.cpp */; };
+		B54D03F313ED0269006B66DC /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B113ED0269006B66DC /* Sprite.cpp */; };
+		B54D03F413ED0269006B66DC /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B213ED0269006B66DC /* System.cpp */; };
+		B54D03F513ED0269006B66DC /* Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B313ED0269006B66DC /* Table.cpp */; };
+		B54D03F613ED0269006B66DC /* Toggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B413ED0269006B66DC /* Toggle.cpp */; };
+		B54D03F713ED0269006B66DC /* utf8proc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B613ED0269006B66DC /* utf8proc.cpp */; };
+		B54D03F813ED0269006B66DC /* utf8proc.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D03B713ED0269006B66DC /* utf8proc.h */; };
+		B54D03F913ED0269006B66DC /* utf8proc_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03B813ED0269006B66DC /* utf8proc_data.cpp */; };
+		B54D03FA13ED0269006B66DC /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03BA13ED0269006B66DC /* Utilities.cpp */; };
+		B54D03FB13ED0269006B66DC /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B54D03BB13ED0269006B66DC /* Utilities.h */; };
+		B54D03FC13ED0269006B66DC /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D03BC13ED0269006B66DC /* View.cpp */; };
+		B59F4CA3133DBEBB004E90BA /* libOtter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libOtter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B59F4CA1133DBEB0004E90BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Otter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5128D62131224E00001FC35 /* libOtterC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOtterC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5128D6C131225660001FC35 /* OtterC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OtterC.cpp; sourceTree = "<group>"; };
+		B5128D6D131225660001FC35 /* OtterC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtterC.h; sourceTree = "<group>"; };
+		B54D037113ED0269006B66DC /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		B54D037313ED0269006B66DC /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		B54D037413ED0269006B66DC /* BaseTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypes.h; sourceTree = "<group>"; };
+		B54D037513ED0269006B66DC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		B54D037613ED0269006B66DC /* Platforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platforms.h; sourceTree = "<group>"; };
+		B54D037713ED0269006B66DC /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		B54D037813ED0269006B66DC /* UTF8String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTF8String.h; sourceTree = "<group>"; };
+		B54D037913ED0269006B66DC /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
+		B54D037B13ED0269006B66DC /* Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = "<group>"; };
+		B54D037D13ED0269006B66DC /* IFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFileSystem.h; sourceTree = "<group>"; };
+		B54D037E13ED0269006B66DC /* IPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlugin.h; sourceTree = "<group>"; };
+		B54D037F13ED0269006B66DC /* IRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRenderer.h; sourceTree = "<group>"; };
+		B54D038013ED0269006B66DC /* ISoundSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISoundSystem.h; sourceTree = "<group>"; };
+		B54D038113ED0269006B66DC /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		B54D038213ED0269006B66DC /* Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mask.h; sourceTree = "<group>"; };
+		B54D038413ED0269006B66DC /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		B54D038513ED0269006B66DC /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		B54D038613ED0269006B66DC /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		B54D038713ED0269006B66DC /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
+		B54D038813ED0269006B66DC /* VectorMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorMath.h; sourceTree = "<group>"; };
+		B54D038913ED0269006B66DC /* Otter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Otter.h; sourceTree = "<group>"; };
+		B54D038A13ED0269006B66DC /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		B54D038B13ED0269006B66DC /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		B54D038C13ED0269006B66DC /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		B54D038D13ED0269006B66DC /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		B54D038E13ED0269006B66DC /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		B54D038F13ED0269006B66DC /* Toggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toggle.h; sourceTree = "<group>"; };
+		B54D039013ED0269006B66DC /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		B54D039213ED0269006B66DC /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		B54D039413ED0269006B66DC /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		B54D039513ED0269006B66DC /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		B54D039613ED0269006B66DC /* UTF8String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8String.cpp; sourceTree = "<group>"; };
+		B54D039713ED0269006B66DC /* Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Control.cpp; sourceTree = "<group>"; };
+		B54D039913ED0269006B66DC /* OtterData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OtterData.cpp; sourceTree = "<group>"; };
+		B54D039A13ED0269006B66DC /* OtterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtterData.h; sourceTree = "<group>"; };
+		B54D039B13ED0269006B66DC /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Font.cpp; sourceTree = "<group>"; };
+		B54D039C13ED0269006B66DC /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		B54D039E13ED0269006B66DC /* Graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graphics.cpp; sourceTree = "<group>"; };
+		B54D039F13ED0269006B66DC /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
+		B54D03A013ED0269006B66DC /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		B54D03A113ED0269006B66DC /* Label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Label.cpp; sourceTree = "<group>"; };
+		B54D03A213ED0269006B66DC /* Mask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mask.cpp; sourceTree = "<group>"; };
+		B54D03A413ED0269006B66DC /* Matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix4.cpp; sourceTree = "<group>"; };
+		B54D03A513ED0269006B66DC /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		B54D03A613ED0269006B66DC /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		B54D03A713ED0269006B66DC /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector4.cpp; sourceTree = "<group>"; };
+		B54D03A813ED0269006B66DC /* VectorMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorMath.cpp; sourceTree = "<group>"; };
+		B54D03AA13ED0269006B66DC /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
+		B54D03AB13ED0269006B66DC /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		B54D03AC13ED0269006B66DC /* MemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryManager.cpp; sourceTree = "<group>"; };
+		B54D03AD13ED0269006B66DC /* MemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManager.h; sourceTree = "<group>"; };
+		B54D03AE13ED0269006B66DC /* Otter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Otter.cpp; sourceTree = "<group>"; };
+		B54D03AF13ED0269006B66DC /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		B54D03B013ED0269006B66DC /* Slider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Slider.cpp; sourceTree = "<group>"; };
+		B54D03B113ED0269006B66DC /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		B54D03B213ED0269006B66DC /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
+		B54D03B313ED0269006B66DC /* Table.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Table.cpp; sourceTree = "<group>"; };
+		B54D03B413ED0269006B66DC /* Toggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Toggle.cpp; sourceTree = "<group>"; };
+		B54D03B613ED0269006B66DC /* utf8proc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf8proc.cpp; sourceTree = "<group>"; };
+		B54D03B713ED0269006B66DC /* utf8proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8proc.h; sourceTree = "<group>"; };
+		B54D03B813ED0269006B66DC /* utf8proc_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf8proc_data.cpp; sourceTree = "<group>"; };
+		B54D03BA13ED0269006B66DC /* Utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
+		B54D03BB13ED0269006B66DC /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B54D03BC13ED0269006B66DC /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
+		B59AC2A1130F19730062B380 /* OtterCBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OtterCBundle-Info.plist"; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libOtter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOtter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5128D5E131224E00001FC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59F4CA3133DBEBB004E90BA /* libOtter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libOtter.a */,
+				B5128D62131224E00001FC35 /* libOtterC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Otter */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				B59AC2A1130F19730062B380 /* OtterCBundle-Info.plist */,
+			);
+			name = Otter;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B54D037013ED0269006B66DC /* inc */,
+				B54D039113ED0269006B66DC /* src */,
+				B5128D6B131225660001FC35 /* otterc */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B5128D6B131225660001FC35 /* otterc */ = {
+			isa = PBXGroup;
+			children = (
+				B5128D6C131225660001FC35 /* OtterC.cpp */,
+				B5128D6D131225660001FC35 /* OtterC.h */,
+			);
+			name = otterc;
+			path = ../../otterc;
+			sourceTree = SOURCE_ROOT;
+		};
+		B54D037013ED0269006B66DC /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				B54D037113ED0269006B66DC /* Button.h */,
+				B54D037213ED0269006B66DC /* Common */,
+				B54D037913ED0269006B66DC /* Control.h */,
+				B54D037A13ED0269006B66DC /* Graphics */,
+				B54D037C13ED0269006B66DC /* Interfaces */,
+				B54D038113ED0269006B66DC /* Label.h */,
+				B54D038213ED0269006B66DC /* Mask.h */,
+				B54D038313ED0269006B66DC /* Math */,
+				B54D038913ED0269006B66DC /* Otter.h */,
+				B54D038A13ED0269006B66DC /* Scene.h */,
+				B54D038B13ED0269006B66DC /* Slider.h */,
+				B54D038C13ED0269006B66DC /* Sprite.h */,
+				B54D038D13ED0269006B66DC /* System.h */,
+				B54D038E13ED0269006B66DC /* Table.h */,
+				B54D038F13ED0269006B66DC /* Toggle.h */,
+				B54D039013ED0269006B66DC /* View.h */,
+			);
+			name = inc;
+			path = ../../inc;
+			sourceTree = SOURCE_ROOT;
+		};
+		B54D037213ED0269006B66DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B54D037313ED0269006B66DC /* Array.h */,
+				B54D037413ED0269006B66DC /* BaseTypes.h */,
+				B54D037513ED0269006B66DC /* Event.h */,
+				B54D037613ED0269006B66DC /* Platforms.h */,
+				B54D037713ED0269006B66DC /* Types.h */,
+				B54D037813ED0269006B66DC /* UTF8String.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B54D037A13ED0269006B66DC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				B54D037B13ED0269006B66DC /* Graphics.h */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		B54D037C13ED0269006B66DC /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B54D037D13ED0269006B66DC /* IFileSystem.h */,
+				B54D037E13ED0269006B66DC /* IPlugin.h */,
+				B54D037F13ED0269006B66DC /* IRenderer.h */,
+				B54D038013ED0269006B66DC /* ISoundSystem.h */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		B54D038313ED0269006B66DC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B54D038413ED0269006B66DC /* Matrix4.h */,
+				B54D038513ED0269006B66DC /* Vector2.h */,
+				B54D038613ED0269006B66DC /* Vector3.h */,
+				B54D038713ED0269006B66DC /* Vector4.h */,
+				B54D038813ED0269006B66DC /* VectorMath.h */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		B54D039113ED0269006B66DC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B54D039213ED0269006B66DC /* Button.cpp */,
+				B54D039313ED0269006B66DC /* Common */,
+				B54D039713ED0269006B66DC /* Control.cpp */,
+				B54D039813ED0269006B66DC /* Data */,
+				B54D039B13ED0269006B66DC /* Font.cpp */,
+				B54D039C13ED0269006B66DC /* Font.h */,
+				B54D039D13ED0269006B66DC /* Graphics */,
+				B54D039F13ED0269006B66DC /* Group.cpp */,
+				B54D03A013ED0269006B66DC /* Group.h */,
+				B54D03A113ED0269006B66DC /* Label.cpp */,
+				B54D03A213ED0269006B66DC /* Mask.cpp */,
+				B54D03A313ED0269006B66DC /* Math */,
+				B54D03A913ED0269006B66DC /* Memory */,
+				B54D03AE13ED0269006B66DC /* Otter.cpp */,
+				B54D03AF13ED0269006B66DC /* Scene.cpp */,
+				B54D03B013ED0269006B66DC /* Slider.cpp */,
+				B54D03B113ED0269006B66DC /* Sprite.cpp */,
+				B54D03B213ED0269006B66DC /* System.cpp */,
+				B54D03B313ED0269006B66DC /* Table.cpp */,
+				B54D03B413ED0269006B66DC /* Toggle.cpp */,
+				B54D03B513ED0269006B66DC /* utf8proc */,
+				B54D03B913ED0269006B66DC /* Utilities */,
+				B54D03BC13ED0269006B66DC /* View.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		B54D039313ED0269006B66DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B54D039413ED0269006B66DC /* Log.cpp */,
+				B54D039513ED0269006B66DC /* Log.h */,
+				B54D039613ED0269006B66DC /* UTF8String.cpp */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B54D039813ED0269006B66DC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B54D039913ED0269006B66DC /* OtterData.cpp */,
+				B54D039A13ED0269006B66DC /* OtterData.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B54D039D13ED0269006B66DC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				B54D039E13ED0269006B66DC /* Graphics.cpp */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		B54D03A313ED0269006B66DC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B54D03A413ED0269006B66DC /* Matrix4.cpp */,
+				B54D03A513ED0269006B66DC /* Vector2.cpp */,
+				B54D03A613ED0269006B66DC /* Vector3.cpp */,
+				B54D03A713ED0269006B66DC /* Vector4.cpp */,
+				B54D03A813ED0269006B66DC /* VectorMath.cpp */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		B54D03A913ED0269006B66DC /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				B54D03AA13ED0269006B66DC /* Memory.cpp */,
+				B54D03AB13ED0269006B66DC /* Memory.h */,
+				B54D03AC13ED0269006B66DC /* MemoryManager.cpp */,
+				B54D03AD13ED0269006B66DC /* MemoryManager.h */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		B54D03B513ED0269006B66DC /* utf8proc */ = {
+			isa = PBXGroup;
+			children = (
+				B54D03B613ED0269006B66DC /* utf8proc.cpp */,
+				B54D03B713ED0269006B66DC /* utf8proc.h */,
+				B54D03B813ED0269006B66DC /* utf8proc_data.cpp */,
+			);
+			path = utf8proc;
+			sourceTree = "<group>";
+		};
+		B54D03B913ED0269006B66DC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B54D03BA13ED0269006B66DC /* Utilities.cpp */,
+				B54D03BB13ED0269006B66DC /* Utilities.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5128D2A131224E00001FC35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5128D6F131225660001FC35 /* OtterC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54D03BD13ED0269006B66DC /* Button.h in Headers */,
+				B54D03BE13ED0269006B66DC /* Array.h in Headers */,
+				B54D03BF13ED0269006B66DC /* BaseTypes.h in Headers */,
+				B54D03C013ED0269006B66DC /* Event.h in Headers */,
+				B54D03C113ED0269006B66DC /* Platforms.h in Headers */,
+				B54D03C213ED0269006B66DC /* Types.h in Headers */,
+				B54D03C313ED0269006B66DC /* UTF8String.h in Headers */,
+				B54D03C413ED0269006B66DC /* Control.h in Headers */,
+				B54D03C513ED0269006B66DC /* Graphics.h in Headers */,
+				B54D03C613ED0269006B66DC /* IFileSystem.h in Headers */,
+				B54D03C713ED0269006B66DC /* IPlugin.h in Headers */,
+				B54D03C813ED0269006B66DC /* IRenderer.h in Headers */,
+				B54D03C913ED0269006B66DC /* ISoundSystem.h in Headers */,
+				B54D03CA13ED0269006B66DC /* Label.h in Headers */,
+				B54D03CB13ED0269006B66DC /* Mask.h in Headers */,
+				B54D03CC13ED0269006B66DC /* Matrix4.h in Headers */,
+				B54D03CD13ED0269006B66DC /* Vector2.h in Headers */,
+				B54D03CE13ED0269006B66DC /* Vector3.h in Headers */,
+				B54D03CF13ED0269006B66DC /* Vector4.h in Headers */,
+				B54D03D013ED0269006B66DC /* VectorMath.h in Headers */,
+				B54D03D113ED0269006B66DC /* Otter.h in Headers */,
+				B54D03D213ED0269006B66DC /* Scene.h in Headers */,
+				B54D03D313ED0269006B66DC /* Slider.h in Headers */,
+				B54D03D413ED0269006B66DC /* Sprite.h in Headers */,
+				B54D03D513ED0269006B66DC /* System.h in Headers */,
+				B54D03D613ED0269006B66DC /* Table.h in Headers */,
+				B54D03D713ED0269006B66DC /* Toggle.h in Headers */,
+				B54D03D813ED0269006B66DC /* View.h in Headers */,
+				B54D03DB13ED0269006B66DC /* Log.h in Headers */,
+				B54D03DF13ED0269006B66DC /* OtterData.h in Headers */,
+				B54D03E113ED0269006B66DC /* Font.h in Headers */,
+				B54D03E413ED0269006B66DC /* Group.h in Headers */,
+				B54D03ED13ED0269006B66DC /* Memory.h in Headers */,
+				B54D03EF13ED0269006B66DC /* MemoryManager.h in Headers */,
+				B54D03F813ED0269006B66DC /* utf8proc.h in Headers */,
+				B54D03FB13ED0269006B66DC /* Utilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B5128D29131224E00001FC35 /* OtterC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5128D5F131224E00001FC35 /* Build configuration list for PBXNativeTarget "OtterC" */;
+			buildPhases = (
+				B5128D2A131224E00001FC35 /* Headers */,
+				B5128D47131224E00001FC35 /* Sources */,
+				B5128D5E131224E00001FC35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B59F4CA2133DBEB0004E90BA /* PBXTargetDependency */,
+			);
+			name = OtterC;
+			productName = Otter;
+			productReference = B5128D62131224E00001FC35 /* libOtterC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* Otter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Otter" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Otter;
+			productName = Otter;
+			productReference = D2AAC07E0554694100DB518D /* libOtter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Otter" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Otter */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Otter */,
+				B5128D29131224E00001FC35 /* OtterC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5128D47131224E00001FC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5128D6E131225660001FC35 /* OtterC.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54D03D913ED0269006B66DC /* Button.cpp in Sources */,
+				B54D03DA13ED0269006B66DC /* Log.cpp in Sources */,
+				B54D03DC13ED0269006B66DC /* UTF8String.cpp in Sources */,
+				B54D03DD13ED0269006B66DC /* Control.cpp in Sources */,
+				B54D03DE13ED0269006B66DC /* OtterData.cpp in Sources */,
+				B54D03E013ED0269006B66DC /* Font.cpp in Sources */,
+				B54D03E213ED0269006B66DC /* Graphics.cpp in Sources */,
+				B54D03E313ED0269006B66DC /* Group.cpp in Sources */,
+				B54D03E513ED0269006B66DC /* Label.cpp in Sources */,
+				B54D03E613ED0269006B66DC /* Mask.cpp in Sources */,
+				B54D03E713ED0269006B66DC /* Matrix4.cpp in Sources */,
+				B54D03E813ED0269006B66DC /* Vector2.cpp in Sources */,
+				B54D03E913ED0269006B66DC /* Vector3.cpp in Sources */,
+				B54D03EA13ED0269006B66DC /* Vector4.cpp in Sources */,
+				B54D03EB13ED0269006B66DC /* VectorMath.cpp in Sources */,
+				B54D03EC13ED0269006B66DC /* Memory.cpp in Sources */,
+				B54D03EE13ED0269006B66DC /* MemoryManager.cpp in Sources */,
+				B54D03F013ED0269006B66DC /* Otter.cpp in Sources */,
+				B54D03F113ED0269006B66DC /* Scene.cpp in Sources */,
+				B54D03F213ED0269006B66DC /* Slider.cpp in Sources */,
+				B54D03F313ED0269006B66DC /* Sprite.cpp in Sources */,
+				B54D03F413ED0269006B66DC /* System.cpp in Sources */,
+				B54D03F513ED0269006B66DC /* Table.cpp in Sources */,
+				B54D03F613ED0269006B66DC /* Toggle.cpp in Sources */,
+				B54D03F713ED0269006B66DC /* utf8proc.cpp in Sources */,
+				B54D03F913ED0269006B66DC /* utf8proc_data.cpp in Sources */,
+				B54D03FA13ED0269006B66DC /* Utilities.cpp in Sources */,
+				B54D03FC13ED0269006B66DC /* View.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B59F4CA2133DBEB0004E90BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* Otter */;
+			targetProxy = B59F4CA1133DBEB0004E90BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/Otter.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Otter;
+				SEPARATE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/Otter.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Otter;
+				SEPARATE_STRIP = NO;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../src,
+					../../inc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../src,
+					../../inc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5128D60131224E00001FC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/OtterC.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "-DPLATFORM_IOS";
+				PRODUCT_NAME = OtterC;
+				SEPARATE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B5128D61131224E00001FC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/OtterC.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "-DPLATFORM_IOS";
+				PRODUCT_NAME = OtterC;
+				SEPARATE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Otter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Otter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5128D5F131224E00001FC35 /* Build configuration list for PBXNativeTarget "OtterC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5128D60131224E00001FC35 /* Debug */,
+				B5128D61131224E00001FC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
